@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+dist-android/
+.env
+.env.local
+*.log
+.local/
+coverage/
+test-results/
+playwright-report/
+expo-env.d.ts

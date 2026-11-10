@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Tap-o",
+    "slug": "tap-o",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/mascot/tap-o.png",
+    "scheme": "tapo",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.edu.tapo.prototype"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#EAF6FF",
+        "foregroundImage": "./assets/mascot/tap-o.png"
+      },
+      "package": "br.edu.tapo.prototype"
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/mascot/tap-o.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Permitir que o Tap-o grave sua voz nesta atividade de treinamento?",
+          "enableBackgroundRecording": false,
+          "enableBackgroundPlayback": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
